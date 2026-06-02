@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🥕 Fruitify</div>
+    <h3>Fresh Picks Delivered Fast</h3>
+
+    <input id="search" placeholder="Search products...">
+
+    <button id="cartBtn">
+        🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Fresh Fruits & Vegetables</h1>
+        <p>Farm Fresh • Healthy • Affordable</p>
+        <button onclick="window.scrollTo(0,500)">
+            Shop Now
+        </button>
+    </div>
+</section>
+
+<nav>
+    <button class="filter" data-category="all">All</button>
+    <button class="filter" data-category="fruit">Fruits</button>
+    <button class="filter" data-category="vegetable">Vegetables</button>
+</nav>
+
+<section id="products"></section>
+
+<div id="cart">
+    <div id="cartItems"></div>
+
+    <h3>Total: ₱<span id="total">0</span></h3>
+
+    <button class="checkout">
+        Checkout
+    </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
